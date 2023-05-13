@@ -12,6 +12,8 @@ final class ModelData: ObservableObject {
     
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json")
+    @Published var profile = Profile.defaultValue
+    
 //    $0은 firstArgument로 함수에 closure에 들어오는 첫번째 인자를 나타냄
     var features: [Landmark] {
         
